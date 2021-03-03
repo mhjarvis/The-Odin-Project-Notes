@@ -13,6 +13,7 @@ The ```<script>``` tag can be used to add JavaScript directly to the html docume
     <script src="/path/to/script1.js"></script>                 //using an absolute path
     <script src="https://something.script.js"></script>         //using url
     <script src="/path/to/script2.js"></script>                 //linking to multiple files
+
 ## Code Structure
 #### Semicolons
 Usually, but not always, a page break will indicate a semicolon (automatic semicolon insertion). However, the following would not produce a semicolon:
@@ -21,16 +22,87 @@ Usually, but not always, a page break will indicate a semicolon (automatic semic
     1
     - 23);
 
-### 'use strict'
-Makes applied to code work the modern way. 
+Semicolons are also not assumed before square ```[]``` brackets. 
 
-### var vs let
-'var' has no block scope, for example, a variable declared in a if-then statement can be called outside that statement if declared with 'var' instead of 'let'.
+## The Modern Mode, 'use strict'
+Inserted at the beginning of a document (or function/object/class) to make the script work the 'modern' way. The devloper console does not use ```use strict``` mode by default. 
 
-### Variables
-Can begin with letters, '$', and '_ '. Cannot contain hyphens. Case matters. 
+## Variables
+#### A Variable
+Can begin with letters, '$', and '_ '. Cannot contain hyphens. Case matters. Variables are declared with the ```let``` keyword. Multiple variables can be declared on one line:
 
-### Data Types
+    let user = "Markus", age = 22, message = "Hi";          //same line declaration
+    let user = "Markus"                                     //multiline declaration
+        , age = 22,
+        , message = "Hi";
+
+#### var vs let
+The ```var``` keyword has no block scope. For example, a variable declared in a if-then statement can be called outside that statement if declared with 'var' instead of 'let'.
+
+#### Constants
+To declare use ```const``` instead of ```let```. Constants that are known prior to execution should be named in all uppercase, while other constants can be named in camelCase.
+
+## Data Types
+#### Numbers
+Consists of integers and floats. ```NaN``` represents a computational error caused by a incorrect or an undefined mathematical operation. ```NaN``` is sticky meaning that any further attempts on ```NaN``` will return ```NaN```. ```Infinity``` (or the - version) represent the mathematical Infinity. It is greater than any number.
+
+    alert(1 / 0);                       //Infinity (division by zero)
+    alert("not a number" / 2);          //NaN
+
+#### BigInt
+The 'number' type cannot represent values greater than 2^(53) - 1 or 9007199254740991. A ```BigInt``` is created by appending a ```n``` to the end of an integer:
+
+    const bitOne = 238477474777474747457577575784n;
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+#### Strings
+Strings can use '', "", ``. Backticks have 'extended functionality'. They allow for embeding variables and expressions into a string by wrapping them in ${...}. The expression inside ${...} is evaluated and the result becomes part of the string. 
+
+    let name = "John";
+    alert( `Hello, ${name}!` );         //Hello, John
+    alert( `the result is ${1 + 2}` );  //the result is 3
+In JavaScript there is no char type.
+##### Boolean (logical type)
+Boolean type has only two values: true, false.
+##### The 'undefined' Value
+The meaning of undefined is 'value not assigned', as in ```let num;```.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 JavaScript uses two kinds of types: primitive and reference. 
 1. Primitive types are stored as simple data types (there are 5): Boolean, Number, String, Null, Undefined. Variables that hold a primitive directly contain the primitive value.
 2. Reference types are stored as objects, which are really just references to locations in memory. Variables that hold references hold a pointer to the location in memory where the value is stored.
@@ -44,23 +116,7 @@ To identify primitive data types we can use the ```typeof``` operator (exception
 
     console.log(value === null);        //true or false (best way to determine is a value is null)
 
-##### Numbers
-Consists of integers and floats. NaN represents a computational### error caused by a incorrect or an undefined mathematical operation. NaN is sticky meaning that any further attempts on NaN will return NaN.
-    alert(1 / 0);                       //will return infinity (division by zero)
-    alert("not a number" / 2);          //NaN
-##### BigInt
-The 'number' type cannot represent values greater than 2^(53) - 1 or 9007199254740991.
-##### Strings
-Strings can use '', "", ``. Backticks have 'extended functionality'. They allow for embeding variables and expressions into a string by wrapping them in ${...}. The expression inside ${...} is evaluated and the result becomes part of the string. 
 
-    let name = "John";
-    alert( `Hello, ${name}!` );         //Hello, John
-    alert( `the result is ${1 + 2}` );  //the result is 3
-In JavaScript there is no char type.
-##### Boolean (logical type)
-Boolean type has only two values: true, false.
-##### The 'undefined' Value
-The meaning of undefined is 'value not assigned', as in ```let num;```.
 
 ### Comparisons
 Note the difference between using ```==``` and ```===```. The tripple equals does the comparison of two items without coercing the item to another type, as in:
