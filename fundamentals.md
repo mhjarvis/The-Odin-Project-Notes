@@ -52,32 +52,25 @@ Consists of integers and floats. ```NaN``` represents a computational error caus
 #### BigInt
 The 'number' type cannot represent values greater than 2^(53) - 1 or 9007199254740991. A ```BigInt``` is created by appending a ```n``` to the end of an integer:
 
-    const bitOne = 238477474777474747457577575784n;
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    const bigOne = 238477474777474747457577575784n;
 
 #### Strings
-Strings can use '', "", ``. Backticks have 'extended functionality'. They allow for embeding variables and expressions into a string by wrapping them in ${...}. The expression inside ${...} is evaluated and the result becomes part of the string. 
+Strings can use '', "", ``. Backticks have 'extended functionality'. They allow for embeding variables and expressions into a string by wrapping them in ${...}. The expression inside ${...} is evaluated and the result becomes part of the string. In JavaScript there is no char type.
 
     let name = "John";
     alert( `Hello, ${name}!` );         //Hello, John
     alert( `the result is ${1 + 2}` );  //the result is 3
-In JavaScript there is no char type.
-##### Boolean (logical type)
+
+#### Boolean (logical type)
 Boolean type has only two values: true, false.
+
+#### The ```null``` Value
+Null is a type of its own and only contains the null value. There is no reference, it is just null.
+
 ##### The 'undefined' Value
-The meaning of undefined is 'value not assigned', as in ```let num;```.
+The meaning of undefined is 'value not assigned', as in ```let num;```. Use ```null``` instead of ```undefined``` if you want to set a value to empty.
+
+
 
 
 
