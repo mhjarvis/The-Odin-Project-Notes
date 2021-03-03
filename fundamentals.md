@@ -67,9 +67,56 @@ Boolean type has only two values: true, false.
 #### The ```null``` Value
 Null is a type of its own and only contains the null value. There is no reference, it is just null.
 
-##### The 'undefined' Value
+#### The 'undefined' Value
 The meaning of undefined is 'value not assigned', as in ```let num;```. Use ```null``` instead of ```undefined``` if you want to set a value to empty.
 
+#### Objects and symbols
+Used to store collections of data. They are not primitive because they can store more than one thing. ```symbol``` is used to create unique identifiers for objects.
+
+#### The ```typeof``` Operator
+Returns the type of the argumentf. Can be used with or without parentheses.
+
+## Interaction: alert, prompt, confirm
+## Type Conversions
+## Basic Operators, maths
+## Comparisons
+## Conditional Branching: if, '?'
+## Logical Operators
+## Nullish Coalescing Operator '??'
+## Loops: while and for
+## The 'switch' Statement
+## Functions
+## Function Expressions
+## Arrow Functions, the Basics (complete)
+Syntax for creating functions that can be better than full expressions.
+
+    let sum = (a, b) => a + b;
+
+    //this is the same as:
+
+    let sum = function(a, b) {
+        return a + b;
+    };
+
+If there is only one argument, the parentheses can be ommitted around parameters:
+
+    let double = n => n * 2;
+
+If there are no arguments, keep the parentheses. Arrow functions can also be used as Function Expressions. To dynamically create a function:
+
+    let age = prompt("Your age: ", 18);
+    let welcome = (age < 18) ?
+        () => alert('Hello') :
+        () => alert('Greetings!');
+    welcome();
+
+#### Multiline Arrow Functions
+When using arrow functions for more complex situations, enclose in curly braces and use a normal return statement.
+
+    let sum = (a, b) => {
+        let result = a + b;
+        return result;
+    }
 
 
 
@@ -82,12 +129,22 @@ The meaning of undefined is 'value not assigned', as in ```let num;```. Use ```n
 
 
 
+## JavaScript Specials
 
 
 
-
-
-
+<h1 align=center>----- Code Quality -----</h1>
+<h1 align=center>----- Objects: The Basics -----</h1>
+<h1 align=center>----- Data Types -----</h1>
+<h1 align=center>----- Advanced Working with Functions -----</h1>
+<h1 align=center>----- Object Properties Configuration -----</h1>
+<h1 align=center>----- Prototypes, Inheritance -----</h1>
+<h1 align=center>----- Classes -----</h1>
+<h1 align=center>----- Error Handling -----</h1>
+<h1 align=center>----- Promises, async/await -----</h1>
+<h1 align=center>----- Generators, Advanced Iteration -----</h1>
+<h1 align=center>----- Modules -----</h1>
+<h1 align=center>----- Miscellaneous -----</h1>
 
 
 
