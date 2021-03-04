@@ -77,6 +77,12 @@ Used to store collections of data. They are not primitive because they can store
 Returns the type of the argumentf. Can be used with or without parentheses.
 
 ## Interaction: alert, prompt, confirm
+    alert("Hello");
+    result = prompt(title, [default]);                  //title is the text shown to the visitor
+                                                        //default is optional, it is the initial value for the input field
+
+
+
 ## Type Conversions
 ## Basic Operators, maths
 ## Comparisons
