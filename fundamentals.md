@@ -150,7 +150,10 @@ When using arrow functions for more complex situations, enclose in curly braces 
 
 
 
-<h1 align=center>----- Classes -----</h1> (incomplete)
+<h1 align=center>----- Classes -----</h1>
+
+(incomplete)
+
 ## Class Basic Syntax(incomplete)
 #### The "class" Syntax
 The basic ```class``` syntax is:
@@ -163,14 +166,123 @@ The basic ```class``` syntax is:
         method3() {...}
         ...
     };
+    
+To create a new object of the class with all the listed methods:
+
+    new MyClass();
+or
+
+    let myObj = new MyClass();
+The ```constructor()``` method is automatically called by ```new```.
+
+    class User {                                        //code can be shortened as the following:
+      constructor(name) {                                 
+        this.name = name;                                 class User {  
+      };                                                    constructor(name) {this.name = name;}
+                                                            sayHi() {alert(this.name);}
+      sayHello() {                                        }
+        alert(this.name);
+      };
+    };
+Note that within classes, there are no requirements for commas, as they will return an error.
 
 #### What is a Class?
+A class, in JavaScript, is a type of function. Above, ```class User{...}``` does the following:
+
+1. It creates a function named ```User```. This becomes the result of the class declaration. Function code is taken from the constructor (which is assumed as empty if there is no constructor.
+2. It stores class methods, such as ```sayHello()``` in ```User.prototype```. After creation, when methods are called, they are called from the ```prototype```.
+
+Referencing the class object above:
+
+    alert(typeof User);                                     //'function'
+    alert(User === User.prototype.constructor);             //'true'
+    alert(User.prototype.sayHello);                         //'alert(this.name);'
+    alert(Object.getOwnPropertyNames(User.prototype));      //'constructor, sayHello'
+
 #### Not just a Syntactic Sugar
+There are reasons for declaring a class (instead of a function).
+1. A function created by ```class``` is labeled as ```[[FunctionKind]]:"classConstructor"```. 
+2. A class must be called with ```new```.
+3. Class methods are non-enumerable (a class sets the enumerable flag to false for all methods in 'prototype').
+4. Classes always ```use strict```.
+
 #### Class Expression
+Classes can be defined inside other expressions, passed around, returned, assigned, etc. A class expression:
+    
+    let User = class {
+      sayHi().{
+        alert("Hello");
+      }
+    };
+Class expressions can have a name, but that name is visible only inside the class:
+
+    let User = class MyClass {
+      sayHi() {
+        alert(MyClass);
+      }
+    };
+    
+    new User().sayHi();                     //works
+    alert(MyClass);                         //error
+Classes can be made dynamically 'on-demand', like this:
+    function makeClass(phrase) {
+      //declare a class and return it
+      return class {
+        sayHi() {
+          alert(phrase);
+        }
+      };
+    }
+    
+    let User = makeClass("Hello");
+    new User().sayHi();                     //'hello'
+    
 #### Getters/Setters
+Classes can include getters/setters, computed properties, etc.
+
+    get name() {
+      return this._name;
+    }
+    set name(value) {
+      if(value.length < 4) {
+        alert("Name is too short.");
+        return;
+      }
+      this._name = value;
+    }
+    ...
+    let user = new User("John");
+    alert(user.name);                       //'John'
+    user = new User("");
+
 #### Computed Names[...]
+A computed method name using brackets [...]:
+
+    class User {
+    
+      ['say' + 'Hi']() {
+        alert("Hello");
+      }
+    }
+    
+    new User().sayHi();                     //'Hello'
+    
 #### Class Fields
-text...
+Class fields is syntax that allows users to add properties. Adding the ```name``` property:
+
+    class User {
+      name = "John";
+      
+      sayHi() {
+        alert('Hello, ${this.name}!');
+      }
+    }
+    
+    new User().sayHi();                     //'Hello, John!'
+Class fields are set on individual objects, not ```User.prototype```. We can also assign values using more complex expressions ans function calls:
+
+    name = prompt("Name, please?", "John");
+incomplte
 
 
 ## Class Inheritance (incomplete)
