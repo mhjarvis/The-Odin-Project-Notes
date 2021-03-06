@@ -83,17 +83,18 @@ Returns the type of the argumentf. Can be used with or without parentheses.
 
 
 
-## Type Conversions
-## Basic Operators, maths
-## Comparisons
-## Conditional Branching: if, '?'
-## Logical Operators
-## Nullish Coalescing Operator '??'
-## Loops: while and for
-## The 'switch' Statement
-## Functions
-## Function Expressions
-## Arrow Functions, the Basics (complete)
+## Type Conversions (incomplete)
+## Basic Operators, maths (incomplete)
+## Comparisons (incomplete)
+## Conditional Branching: if, '?' (incomplete)
+## Logical Operators (incomplete)
+## Nullish Coalescing Operator '??' (incomplete)
+## Loops: while and for (incomplete)
+## The 'switch' Statement (incomplete)
+## Functions (incomplete)
+## Function Expressions (incomplete)
+## Arrow Functions, the Basics (incomplete)
+
 Syntax for creating functions that can be better than full expressions.
 
     let sum = (a, b) => a + b;
@@ -116,7 +117,7 @@ If there are no arguments, keep the parentheses. Arrow functions can also be use
         () => alert('Greetings!');
     welcome();
 
-#### Multiline Arrow Functions
+#### Multiline Arrow Functions (incomplete)
 When using arrow functions for more complex situations, enclose in curly braces and use a normal return statement.
 
     let sum = (a, b) => {
@@ -135,22 +136,95 @@ When using arrow functions for more complex situations, enclose in curly braces 
 
 
 
-## JavaScript Specials
+## JavaScript Specials(incomplete)
 
 
 
-<h1 align=center>----- Code Quality -----</h1>
-<h1 align=center>----- Objects: The Basics -----</h1>
-<h1 align=center>----- Data Types -----</h1>
-<h1 align=center>----- Advanced Working with Functions -----</h1>
-<h1 align=center>----- Object Properties Configuration -----</h1>
-<h1 align=center>----- Prototypes, Inheritance -----</h1>
-<h1 align=center>----- Classes -----</h1>
-<h1 align=center>----- Error Handling -----</h1>
-<h1 align=center>----- Promises, async/await -----</h1>
-<h1 align=center>----- Generators, Advanced Iteration -----</h1>
-<h1 align=center>----- Modules -----</h1>
-<h1 align=center>----- Miscellaneous -----</h1>
+<h1 align=center>----- Code Quality -----</h1> (incomplete)
+<h1 align=center>----- Objects: The Basics -----</h1> (incomplete)
+<h1 align=center>----- Data Types -----</h1> (incomplete)
+<h1 align=center>----- Advanced Working with Functions -----</h1> (incomplete)
+<h1 align=center>----- Object Properties Configuration -----</h1> (incomplete)
+<h1 align=center>----- Prototypes, Inheritance -----</h1> (incomplete)
+
+
+
+
+<h1 align=center>----- Classes -----</h1> (incomplete)
+## Class Basic Syntax(incomplete)
+#### The "class" Syntax
+The basic ```class``` syntax is:
+
+    class MyClass {
+        //methods
+        constructor() {...}
+        method1() {...}
+        method2() {...}
+        method3() {...}
+        ...
+    };
+
+#### What is a Class?
+#### Not just a Syntactic Sugar
+#### Class Expression
+#### Getters/Setters
+#### Computed Names[...]
+#### Class Fields
+text...
+
+
+## Class Inheritance (incomplete)
+#### 
+text...
+
+
+##  Static Properties and Methods (incomplete)
+#### 
+text...
+
+
+## Private and Protected Properties and Metthods (incomplete)
+#### 
+text...
+
+
+## Extending Build-in Classes (incomplete)
+#### 
+text...
+
+
+## Class Checking: "instanceof" (incomplete)
+#### 
+text...
+
+
+## Mixins (incomplete)
+#### 
+text...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 align=center>----- Error Handling -----</h1> (incomplete)
+<h1 align=center>----- Promises, async/await -----</h1> (incomplete)
+<h1 align=center>----- Generators, Advanced Iteration -----</h1> (incomplete)
+<h1 align=center>----- Modules -----</h1> (incomplete)
+<h1 align=center>----- Miscellaneous -----</h1> (incomplete)
 
 
 
