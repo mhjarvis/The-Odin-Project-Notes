@@ -225,6 +225,7 @@ Class expressions can have a name, but that name is visible only inside the clas
     new User().sayHi();                     //works
     alert(MyClass);                         //error
 Classes can be made dynamically 'on-demand', like this:
+
     function makeClass(phrase) {
       //declare a class and return it
       return class {
@@ -282,7 +283,38 @@ Class fields is syntax that allows users to add properties. Adding the ```name``
 Class fields are set on individual objects, not ```User.prototype```. We can also assign values using more complex expressions ans function calls:
 
     name = prompt("Name, please?", "John");
-incomplte
+###### Making bound methods with class fields
+If an object method is passed around and called in another context, ```this``` won't be a refrnce to its object any more. For example, this will show ```undefined```:
+
+    class Button {
+      constructor(value) {
+        this.value = value;
+      }
+      click() {
+        alert(this.value);
+      }
+    }
+    
+    let button = new Button("hello");
+    setTimeout(button.click, 1000);         //undefined
+    
+It is called "loosing ```this```". I can be fixed by either:
+1. Pass a wrapper-function, such as ```setTimeout(() => button.click(), 1000).
+2. Bind the method to object (the constructor).
+
+Class fields also has special syntax. The class field ```click = () => {...}``` is created on a per-object basis. There will be a seperate function for each ```Button``` object, with ```this``` referencing that object. We can pass ```button.click``` around anywhere, and the value of ```this``` will always be correct. *This is especially useful for in browser environments, for event listeners.* Example:
+
+    class Button {
+      constructor(value) {
+        this.value = value;
+      }
+      click = () => {
+        alert(this.value);
+      }
+    }
+    
+    let button = new Button("hello");
+    setTimeout(button.click, 1000);             //'hello'
 
 
 ## Class Inheritance (incomplete)
