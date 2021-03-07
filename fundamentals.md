@@ -92,7 +92,55 @@ Returns the type of the argumentf. Can be used with or without parentheses.
 ## Loops: while and for (incomplete)
 ## The 'switch' Statement (incomplete)
 ## Functions (incomplete)
+One goal of functions is to avoid code duplication. If changes need to be made, you know where to modify it (at one location).
+
+    function name(parameters) {
+      ...body...
+    }
+    name("Mark");                                   //call function
+
+#### Local Variables
+Variables declared inside of a function are only visible inside that function.
+
+    function printName(name) {
+      let x = name;
+      console.log(x);
+    }
+    printName("Mark");                             //'Mark'
+    console.log(x);                                //error
+    
+#### Other Variables and Parameters
+A Function, however, can access outside variables. It can also modify the outside variable. The outer variable is only used if there is no local one (inside the function). Functions also use parameters, in which case they are sent a copy of the passed parameter. 
+    
+    let name = "Mark";                              //global variable
+    function printName() {                          //"Mark"
+      console.log(name);                            //name is a function parameter
+      name = "Mike";
+      conosle.log(name);                            //"Mike"
+    }
+    
+#### Default Values
+If no parameter is provided, then its value becomes ```undefined```. If there is a parameter an no value is given for it, then it will get the value "no text given" (a string).
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
 ## Function Expressions (incomplete)
+Function expressions allow for use of the function before declaration.
 ## Arrow Functions, the Basics (incomplete)
 
 Syntax for creating functions that can be better than full expressions.
