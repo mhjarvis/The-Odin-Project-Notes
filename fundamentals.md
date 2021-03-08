@@ -392,15 +392,16 @@ text...
 
 ## Mixins (incomplete)
 #### 
-text...
+text..
 
 
 
-
-
-
-
-
+<h1 align=center>----- ES6 Modules -----</h1> (incomplete)
+## The Node Package Manager (npm)
+The npm is a command line tool giving access to a software repository that includes plugins, libraries, and tools. It consists of three components:
+1. The website - used to discover packages, set up profiles, etc.
+2. The Command Line Interface - main way to interact with the npm.
+3. The registry - a large public database of JavaScript software and the meta-information surrounding it.
 
 
 
