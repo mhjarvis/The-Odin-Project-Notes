@@ -73,7 +73,9 @@ Resets should be at the top of a stylesheet, since rendering happens from top to
     }
 
 <h1 align=center>----- Getting to Know HTML -----</h1>
+
 ## Divisions and Spans
+
 Divisions (```<div>```) and spans (```<span>```) are elements that act as containers primarily for styling purposes. a ```<div>``` is a block-level element and is mainly used to identify large groupings of content. A ```<span>``` is an inline-level element used to identify smaller groupings of text within a blcok-level element.
 
 #### Block vs Inline Elements
