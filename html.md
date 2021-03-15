@@ -107,6 +107,99 @@ The ```<em>``` element is used semantically to place a stressed emphasis on text
     <p>The name <i>Tom</i> means something.</p>
     
 ## Building Structure
+#### Header
+The ```<header>``` element is used to identify the top of a page, article, section, or other segment of a page. May include heading, intro text, navigation.
+
+    <header>
+
+#### Navigation
+The ```<nav>``` element identify navigational links on a page. Use for global navigation, table of contents, previous/next links, and other noteworthy groups of navigational links.
+
+    <nav>
+
+#### Article
+The ```<article``` element is used to identify a section of independent, self-contained content that may be independently distributed or reused. Examples include blog posts, newspaper articles, user-submitted content, etc. The content within an article tag might be replicated elsewhere without confusion. 
+
+    <article>
+
+#### Section
+The ```<section>``` element is used to identify thematic grouping of content (may include a heading). Commonly used to break up and provide hierarchy to a page.
+
+    <section>
+    
+#### Deciding between ```<article>```, ```<section>```, or ```<div>``` Elements
+Use ```<div>``` if the content is used only for styling purposes. The other are best to provide structure to a page.
+
+#### Aside
+The ```<aside``` element holds content such as sidebars, inserts, or brief explanations. Remember that this is a block-level element.
+
+    <aside>
+#### Footer
+The ```<footer>``` element the closing or end of a page, article, section, or other segment of a page. 
+
+    <footer>
+    
+## Creating Hyperlinks
+Hyperlinks are established using the anchor (inline) element ```<a>```. To create a link from one page to another use the hyperlink reference ```href```. ```href``` identifies the destination of the link. Despite being a inline element, the anchor element is able to wrap block level elements in order to make entire sections clickable as links.
+
+    <a href="somelink....com">Click here!</a>
+    
+#### Relative & Absolute Paths
+Links pointing to a page on the same website will have a relative path. Links to other websites use a absolute path. 
+
+    <a href="about.html">About</a>                  //relative path
+    <a href="duckduckgo.com">Duck</a>               //absolute path
+    
+#### Linking to an Email Address
+To create an email link, the href attribute value needs to start with ```mailto:``` followed by the email address. Subject, body text, and other information for the email can also be populated. The first parameter following the email address must begin with a question mark ```?```. This binds it to the hyperlink path. Multiple words requireing spaces must be encoded ```%20```. Adding body text works using the ```body=``` parameter and using the ampersand ```&``` to seperate the two. 
+
+    <a href="mailto:markus@gmail.com?subject=Question%20for%20you">Email me</a>
+
+#### Open Links in a New Window
+To open links in a new window, use the ```target``` attribute with a value of ```_blank```.
+
+    <a href="http://duckduckgo.com" target="_blank">Click here!</a>                 //opens in new window
+    
+#### Linking to Parts of the Same Page
+We can link to different parts of the same page by first creating an ```id``` element. We then use the value of that id attribute in the anchor element's href attribute. 
+
+    <body id="top">
+    ...
+        <a href="top">Back to top</a>
+    ...
+    </body>
+
+<h1 align=center>----- Getting to Know CSS -----</h1>
+<h1 align=center>----- Opening the Box Model -----</h1>
+<h1 align=center>----- Positioning Content -----</h1>
+<h1 align=center>----- Working with Typography -----</h1>
+<h1 align=center>----- Setting Backgrounds & Gradients -----</h1>
+<h1 align=center>----- Creating Lists -----</h1>
+<h1 align=center>----- Adding Media -----</h1>
+<h1 align=center>----- Building Forms -----</h1>
+<h1 align=center>----- Organizing Data with Tables -----</h1>
+<h1 align=center>----- Writing Your Best Code -----</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
