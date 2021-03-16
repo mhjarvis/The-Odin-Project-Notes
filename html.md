@@ -198,6 +198,14 @@ We can link to different parts of the same page by first creating an ```id``` el
 7. Seperate content from style.
 8. Avoid excessive divs.
 9. Continually refactor code.
+10. Attribut order should be the following:
+
+    class
+    id, name
+    data-*
+    src, for, type, href, value
+    title, alt
+    role, aria-*
 
 ## CSS Coding Practices
 1. Organize code with comments.
