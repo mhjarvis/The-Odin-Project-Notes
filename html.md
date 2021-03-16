@@ -180,10 +180,36 @@ We can link to different parts of the same page by first creating an ```id``` el
 <h1 align=center>----- Adding Media -----</h1>
 <h1 align=center>----- Building Forms -----</h1>
 <h1 align=center>----- Organizing Data with Tables -----</h1>
+
 <h1 align=center>----- Writing Your Best Code -----</h1>
 
+## HTML Coding Practices
+1. Write standards compliant markup.
+2. Make use of semantic elements.
+3. Us the proper document structure.
+4. Keep the syntax organized.
+  a. Use lowercase letters within element names, attributes, and values.
+  b. Indent nested elements.
+  c. Strictly use double quotes, not single or completely omitted quotes.
+  d. Remove the forward slash at the end of self-closing elements.
+  e. Omit the values on Boolean attributes.
+5. Use practical ID and Class values.
+6. Use the alternative text attributes on images.
+7. Seperate content from style.
+8. Avoid excessive divs.
+9. Continually refactor code.
 
-
+## CSS Coding Practices
+1. Organize code with comments.
+2. Write CSS using multiple lines and spaces.
+3. Use proper class names.
+4. Build proficient selectors.
+5. Use specific classes when necessary.
+7. Use shorthand properties and values.
+8. Use shorthand hexadecimal color values.
+9. Drop units from zero values.
+10. Group and align vendor prefixes.
+11. Modularize styles for reuse.
 
 
 
