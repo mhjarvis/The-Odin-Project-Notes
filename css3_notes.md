@@ -1,4 +1,5 @@
 <h1 align=center>----- Basics -----</h1>
+
 ## Link Pseudo-Classes
 Commonly used pseudo-classes for styling hyperlinks:
 
