@@ -178,6 +178,42 @@ We can link to different parts of the same page by first creating an ```id``` el
 <h1 align=center>----- Setting Backgrounds & Gradients -----</h1>
 <h1 align=center>----- Creating Lists -----</h1>
 <h1 align=center>----- Adding Media -----</h1>
+
+## Adding Images
+The ```<img>``` tag is a self contained inline element that is accompanied by the ```src``` and ```alt``` attribute. The ```alt``` attribute describes the image and should usually be added. The alt tag is picked up by search engines and will be displayed if the image fails to load.
+
+    <img src="dog.jpg" alt="A Golden Retriver">             //img tag with src and alt attributes
+
+The ```jpg``` and ```png``` formats are most used online. The ```jpg``` format provides quality images with high color counts with good file sizes making them optimal for fast load times. The ```png``` format is good for images with transpaencies or low color counts. ```jpg``` are usually used for photographs while ```png``` images are used for icons or background patterns.
+
+#### Sizing Images
+CSS properties will overtake any attributes declared in HTML. When specifying either width or height it will cause the other dimension to adjust automatically.
+
+#### Positioning Images
+Images are by default inline-level elements. Position can be changed using CSS by implementing the float, display, and box model properties (padding, border, margin).
+
+- Inline images places that image within the same line as the content surrounding it.
+- Block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h1 align=center>----- Building Forms -----</h1>
 <h1 align=center>----- Organizing Data with Tables -----</h1>
 
