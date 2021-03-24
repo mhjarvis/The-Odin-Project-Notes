@@ -4,6 +4,31 @@
 2. HTML Code Validation: https://validator.w3.org/
 3. CSS Code Validation: https://jigsaw.w3.org/css-validator/
 
+### Hosting
+1. https://netlify.com
+2. https://heroku.com
+### Royalty Free Images & Video
+1. https://unsplash.com
+2. https://pexels.com
+3. https://undraw.co/illustrations
+4. https://coverr.co
+### Icons & Fonts
+1. https://flaticon.com
+2. https://icons8.com/animated-icons
+3. https://fontawesome.com
+4. https://fonts.google.com
+### Mockup Tools
+1. https://figma.com
+2. https://zeplin.io
+### Design Ideas
+1. https://Awwwards.com
+2. https://dribbble.com
+### Exercises & Algorithms
+1. https://leetcode.com
+2. https://exercism.io
+3. https://codewars.com
+    
+
 <h1 align=center>----- Basics -----</h1>
 
 ## Building Basics
