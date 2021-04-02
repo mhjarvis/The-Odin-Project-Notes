@@ -1,5 +1,7 @@
 <h1 align=center>----- Links -----</h1>
 
+Ruby Documentation - https://ruby-doc.org/core-2.7.1/index.html#classes
+
 <h1 align=center>----- Data Types -----</h1>
 
 ## Numbers
@@ -36,7 +38,7 @@ Some useful methods for working with numbers:
     7.odd?              //true
 
 ## Strings
-Can be formed with either single (string literals) or double quotes. Note that string interpolation and the escape characters only work within double quotes.
+Can be formed with either single (string literals) or double quotes. Note that string interpolation and the escape characters only work within double quotes. Strings can be changed, but every time a string is used, Ruby has to store it in memory even if an existing string with the same value already exists. 
 
 ### Concatenation
 There are multiple ways to concatenate strings:
@@ -72,6 +74,38 @@ Interpolation allows you to evaluate a string that contains placeholder variable
     
     puts "Hello, #{name}"           //"Hello, Markus"
     puts 'Hello, #{name}'           //"Hello, #{name}"
+
+### Common String Methods
+
+    "hello".capitalize              //"Hello"
+    "hello".include?("lo")          //true
+    "hello".upcase                  //"HELLO"
+    "Hello".downcase                //"hello"
+    "hello".empty?                  //false
+    "".empty?                       //true
+    "hello".length                  //5
+    "hello".reverse                 //olleh
+    "hello world".split             //["hello", "world"]
+    "hello".split("")               //["h", "e", "l", "l", "o"]
+    " hello, world  ".strip         //"hello, world"
+    
+    "he77o".sub("7", "l")           //"hel7o"
+    "he77o".gsub("7", "l")          //"hello"
+    "hello".insert(-1, " dude")     //"hello dude"
+    "hello world".delete("l")       //"heo word"
+    "!".prepend("hello, ", "world") //"hello, world!"
+    
+    5.to_s                          //"5"
+    nil.to_s                        //""
+    :symbol.to_s                    //"symbol"
+
+## Symbols
+Symbols are stored in memory only once, making them faster in some situtions. Create a symbol:
+
+    :my_symbol                      //creates a symbol
+    
+## Booleans
+```nil``` represents nothing in Ruby. ```true``` and ```false``` behave as normal. Everything in Ruby has a return value and if code does not have anything to return, it will return ```nil```.
 
 
 
