@@ -117,9 +117,21 @@ The function declaration has the advantage of allowing the user to invoke then f
       return x * x;
     }
     
+## Arrow Functions
+
+    const power = (base, exponent) => { 
+      let result = 1;
+      for (let count = 0; count < exponent; count++) {
+        result *= base;
+      return result;
+    };
     
-    
-    
+Shortening when possible:
+
+    const square1 = (x) => { return x * x; };
+    const square2 = x => x * x;                 //same as above but with reduced syntax
+
+
     
     
     
