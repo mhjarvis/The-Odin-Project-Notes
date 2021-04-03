@@ -2,7 +2,7 @@
 
 1. https://javascript.info/
 
-<h1 align=center>----- Fundamentals -----</h1>
+<h1 align=center>----- Values, Types, and Operators -----</h1>
 
 ## The "script" Tag
 
@@ -47,6 +47,8 @@ Operands are what operators are applied to. An operator is unary if it has a sin
     alert( apples + oranges);                   //"23"
     alert( +apples + +oranges);                 //5
     
+<h1 align=center>----- Program Structure -----</h1>
+    
 ## Comparisons
 
     alert( 'Z' > 'A' );                         //true; string comparisons work
@@ -64,16 +66,56 @@ Operands are what operators are applied to. An operator is unary if it has a sin
     let accessAllowed = (age > 18) ? true : false;              //returns true/false depending on condition
     let accessAllowed = age > 18 ? true : false;                //same as above
     
+## While, Do, and For Loops
     
+    while (i < 10) {                             //while syntax
+      console.log(i);
+    }
     
+    let name;
+    do {                                        //do syntax
+      name = prompt("what is your name?");
+      } while (!name);
+    console.log(name);
     
+    for (let i = 0; i < 10; i++) {
+      console.log(i);
+    }
     
+## Breaking Out of a Loop and Continue
     
+    for (let i = 0; i < 10; i++) {
+      if (i == 4) continue;                     //ends current iteration, not the whole loop
+      if (i == 5) {
+        console.log('breaking out');
+        break;                                  //breaks out of and ends loop when i = 5
+      }
+      console.log(i);                           //0, 1, 2, 3, 4, 'breaking out'
+    }
+
+## Switch Statement
+
+    switch (x) {
+      case 'value1':
+        ...
+        break;
+      case 'value2':
+        ...
+        break;
+      default:
+        ...
+    }
     
+<h1 align=center>----- Functions -----</h1>
+
+## Declaration Notation
+The function declaration has the advantage of allowing the user to invoke then function prior to its declaration.
+
+    console.log(square(3));                     //valid use
     
-    
-    
-    
+    function square(x) {
+      return x * x;
+    }
     
     
     
