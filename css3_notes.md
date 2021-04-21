@@ -13,7 +13,7 @@ The suggested link order is:
 
     a -> a:link -> a:visited -> a:hover -> a:focus -> a:active
 
-<h1 align=center>----- Best Practicees -----</h1>
+<h1 align=center>----- Best Practices -----</h1>
 
 #### Floats First
 Place floated elements first in the document order. They require something to wrap around, otherwise they may create a step down effect.
