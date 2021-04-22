@@ -2,7 +2,7 @@
 
 Ruby Documentation - https://ruby-doc.org/core-2.7.1/index.html#classes
 
-<h1 align=center>----- Data Types -----</h1>
+<h1 align=center>----- Basic Data Types -----</h1>
 
 ## Numbers
 
@@ -107,10 +107,6 @@ Symbols are stored in memory only once, making them faster in some situtions. Cr
 ## Booleans
 ```nil``` represents nothing in Ruby. ```true``` and ```false``` behave as normal. Everything in Ruby has a return value and if code does not have anything to return, it will return ```nil```.
 
-
-
-
-
 ## Review
 1. List the basic arithmetic operators and what they do.
 2. Describe the difference between an integer and a float and how to convert between the two.
@@ -118,6 +114,31 @@ Symbols are stored in memory only once, making them faster in some situtions. Cr
 4. Describe what escape characters are, and list several examples.
 5. Define what a symbol is and how it differs from a string.
 6. Explain what the Booleans true, false, and nil represent.
+
+<h1 align=center>----- Variables -----</h1>
+
+## Declaring Variables
+When declaring variable names, use snake_case. 
+
+    age = 18
+
+### Variables are References
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
