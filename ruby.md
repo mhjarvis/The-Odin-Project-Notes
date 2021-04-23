@@ -4,6 +4,10 @@ Ruby Documentation - https://ruby-doc.org/core-2.7.1/index.html#classes
 
 <h1 align=center>----- Basic Data Types -----</h1>
 
+## Ruby Command Line Commands
+
+    ruby test.rb                    //run associated file through ruby interpreter
+    ruby -cw c2f.rb                 //check for syntax errors (-c means _check for syntax errors_, -w activates a higher level of warning)
 ## Variables
 Ruby has a different variable naming system and uses snake_case over camelCase. Examples are:
 1. Local Variable - ```first_name```
