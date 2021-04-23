@@ -4,6 +4,13 @@ Ruby Documentation - https://ruby-doc.org/core-2.7.1/index.html#classes
 
 <h1 align=center>----- Basic Data Types -----</h1>
 
+## Variables
+Ruby has a different variable naming system and uses snake_case over camelCase. Examples are:
+1. Local Variable - ```first_name```
+2. Instance - ```@first_name```
+3. Class - ```@@first_name```
+4. Global - ```$FIRST_NAME```
+
 ## Numbers
 
     1 + 1               //addition
