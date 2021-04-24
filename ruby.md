@@ -8,6 +8,28 @@ Ruby Documentation - https://ruby-doc.org/core-2.7.1/index.html#classes
 
     ruby test.rb                    //run associated file through ruby interpreter
     ruby -cw c2f.rb                 //check for syntax errors (-c means _check for syntax errors_, -w activates a higher level of warning)
+    
+    ruby -e 'puts $:'               //print out the Ruby interpreter's load path (a list of directories in which it searches for files you ask it to load).
+    
+    
+## File Input / Writing to
+
+    num = File.read("filename.dat")             //gets input from file named filename.dat
+    
+    fh = File.new("temp.out", "w")              //create new file and write (-w) to new file called "temp.out"
+    fh.puts num                                 //prints variable to the file for which 'fh' is the write handle
+    fh.close                                    //close file/output
+
+## Loading External Files and Extensions
+There are two methods for 'loading' external files/extensions: _load_ and _require_. In this case, _require_, when called more than once with the same arguments, does not reload files it has already loaded. _require_ is also more abstract, not requiring the full file extension (it views things as 'features' instead of 'files').
+
+    puts "This is printing from the first file..."
+    load "secondfile.rb"                                            //loads second file and runs 
+    
+    require "./secondfile"                                          //file type is not given, but will return the same result
+    
+_require_ is the more day-to-day technique used.
+    
 ## Variables
 Ruby has a different variable naming system and uses snake_case over camelCase. Examples are:
 1. Local Variable - ```first_name```
